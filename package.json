@@ -1,0 +1,29 @@
+{
+  "name": "hacg-tool",
+  "version": "0.0.1",
+  "scripts": {
+    "re:dev": "rescript build -w",
+    "re:clean": "rescript clean -with-deps",
+    "re:build": "rescript",
+    "rollup:dev": "rollup -c -w",
+    "rollup:build": "rollup -c",
+    "start": "concurrently -n dev: \"npm:*:dev\"",
+    "build": "concurrently -n build: \"npm:*:build\""
+  },
+  "keywords": [
+    "rescript"
+  ],
+  "author": "hewel",
+  "license": "MIT",
+  "dependencies": {
+    "rescript": "*",
+    "rescript-webapi": "^0.6.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "concurrently": "^7.2.0",
+    "rollup": "^2.73.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
