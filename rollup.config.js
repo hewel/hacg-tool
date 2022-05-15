@@ -8,7 +8,7 @@ const isProd = !process.env.ROLLUP_WATCH
 const banner = `
 // ==UserScript==
 // @name         ${pkg.name}
-// @description  哔哩哔哩工具
+// @description  ${pkg.description}
 // @author       ${pkg.author}
 // @match        *://*.hacg.cat/*
 // @version      ${pkg.version}

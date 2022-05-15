@@ -15,6 +15,7 @@
   ],
   "author": "hewel",
   "license": "MIT",
+  "description": "琉璃神社实用脚本",
   "dependencies": {
     "rescript": "*",
     "rescript-webapi": "^0.6.1"
